@@ -33,5 +33,17 @@ conn.connect(function(err) {
     conn.query(sql, [values], function(err, result) {
         if (err) throw err;
         console.log("Number of records inserted: "+result.affectedRows);
+        /** Result Object
+         * 
+         * fieldCount
+         * affectedRows
+         * insertId
+         * serverStatus
+         * warningCount
+         * message
+         * protocol41
+         * changeRows
+         * 
+         */
     })
 })
